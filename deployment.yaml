@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: traveloka-test-solution
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: traveloka-test-solution
+  template:
+    metadata:
+      labels:
+        app: traveloka-test-solution
+    spec:
+      containers:
+      - name: traveloka-test-solution
+        image: traveloka-test-solution:v1
+        imagePullPolicy: Never
+        resources:
+          requests:
+            cpu: "0.1"
+            memory: 128Mi
+          limits:
+            cpu: "1"
+            memory: 512Mi
+        ports:
+        - containerPort: 8080
