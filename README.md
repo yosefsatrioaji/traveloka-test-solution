@@ -2,7 +2,7 @@
 This my solution for the task 2 of the DevOps test.
 I used javascript and expressjs framework to create simple ToDo App.
 I used docker to containerize the application and kubernetes to run the application.
-And for the  I used k6.io.
+And for the test script I used k6.io.
 
 ## How to run locally
 - Clone the repository
