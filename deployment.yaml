@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: traveloka-test-solution
-        image: traveloka-test-solution:v1
+        image: traveloka-test-solution:v2
         imagePullPolicy: Never
         resources:
           requests:
@@ -25,3 +25,8 @@ spec:
             memory: 512Mi
         ports:
         - containerPort: 8080
+        env:
+        - name: MONGO_HOST
+          value: mongodb
+        - name: MONGO_PORT
+          value: "27017"

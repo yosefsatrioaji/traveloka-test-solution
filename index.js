@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/todo-app", {
+mongoose.connect("mongodb://mongodb/todo-app", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
