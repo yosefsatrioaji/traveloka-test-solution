@@ -1,8 +1,8 @@
-# DevOps Test Solution Task 1
-This my solution for the task 1 of the DevOps test.
-I used javascript and expressjs framework to create simple Hello World HTTP.
+# DevOps Test Solution Task 2
+This my solution for the task 2 of the DevOps test.
+I used javascript and expressjs framework to create simple ToDo App.
 I used docker to containerize the application and kubernetes to run the application.
-And for the loadtest I used k6.io.
+And for the  I used k6.io.
 
 ## How to run locally
 - Clone the repository
@@ -21,17 +21,32 @@ $ minikube tunnel
 $ ./setup.sh
 ```
 
-## How to run loadtest
+## How to run test
 - Install k6.io if not already installed. How to install k6.io: https://k6.io/docs/getting-started/installation/
-- Switch to folder loadtest
+- Switch to folder test-script
 ```console
-$ cd loadtest
+$ cd test-script
 ```
-- Run the following command to run the loadtest
+- Run the following command to run the script
 ```console
-$ k6 run --vus 100 --iterations 1000 loadtest.js
+$ k6 run crud-test.js
 ```
-It will run 100 virtual users for 1000 iterations.
+
+## How to rollback
+- Run rollback.sh
+```console
+$ ./rollback.sh
+```
+Type branch name to rollback, for example solutions/task1 to rollback to the task 1 solution.
+
+## How to scale down/up
+- Open deployment.yaml
+- Change replicas to desired number
+- Run the following command
+```console
+$ ./run-kubernetes.sh
+```
+
 
 ## Limitations
 - The solution must be run on a Linux ubuntu
