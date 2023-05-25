@@ -12,6 +12,7 @@ And for the loadtest I used k6.io.
 - Install minikube if not already installed. How to install minikube: https://minikube.sigs.k8s.io/docs/start/
 - Open seperate terminal and run
 ```console
+$ sudo dockerd
 $ minikube start
 $ minikube tunnel
 ```
