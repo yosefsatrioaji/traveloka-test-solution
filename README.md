@@ -15,7 +15,6 @@ And for the loadtest I used k6.io.
 $ minikube start
 $ minikube tunnel
 ```
-```console
 - Run setup.sh
 ```console
 $ ./setup.sh
@@ -37,3 +36,9 @@ It will run 100 virtual users for 1000 iterations.
 - The solution must be run on a Linux ubuntu
 - This solutions is tested on Ubuntu 22.04.2 LTS running on WSL2 on Windows 11
 - build-image.sh is configured to use minikube
+
+## Why?
+### Why I used javascript and expressjs framework?
+I used javascript because it is the language I am most familiar with. And I used expressjs framework because it is the most popular framework for nodejs.
+### Why k6.io?
+I used k6.io because it scripted using javascript, which is the language I am most familiar with.
