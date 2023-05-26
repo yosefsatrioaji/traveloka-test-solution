@@ -6,7 +6,7 @@ And for the test script I used k6.io.
 
 ## How to run locally
 - Clone the repository
-- Switch to branch solutions/task1
+- Switch to branch solutions/task2
 - Install docker if not already installed. How to install docker: https://docs.docker.com/engine/install/ubuntu/
 - Install kubectl if not already installed. How to install kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 - Install minikube if not already installed. How to install minikube: https://minikube.sigs.k8s.io/docs/start/
